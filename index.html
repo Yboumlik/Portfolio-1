@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
@@ -39,6 +39,13 @@
                     <circle cx="12" cy="12" r="5" />
                     <path
                         d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                </svg>
+            </button>
+            <button class="debug-toggle" aria-label="Toggle Developer HUD">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 18l6-6-6-6" />
+                    <path d="M8 6l-6 6 6 6" />
                 </svg>
             </button>
         </div>
@@ -74,14 +81,35 @@
                     <article class="project-item fade-in">
                         <div class="project-info">
                             <h3 class="project-title">Saffron App</h3>
-                            <p class="project-desc">A premium recipe planner with a focus on aesthetics and user flow.
-                            </p>
-                            <ul class="project-tags">
-                                <li>UI/UX Design</li>
-                                <li>Prototyping</li>
-                                <li>Mobile App</li>
-                            </ul>
-                            <a href="#" class="project-link">View Case Study</a>
+                            <div class="project-meta">
+                                <div class="meta-block">
+                                    <h4>Challenge</h4>
+                                    <p>Users needed a recipe planner that wasn't just functional, but inspiring and
+                                        beautiful to use daily.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>Solution</h4>
+                                    <p>Designed a premium, aesthetic-first mobile experience with glassmorphism UI and
+                                        fluid animations.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>My Role</h4>
+                                    <ul class="role-list">
+                                        <li>Designed complete UI system in Figma</li>
+                                        <li>Implemented complex CSS glassmorphism</li>
+                                        <li>Optimized image loading for mobile</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span>UI/UX</span>
+                                <span>CSS3</span>
+                                <span>Mobile First</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link">Live Demo</a>
+                                <a href="#" class="btn-link">Source Code</a>
+                            </div>
                         </div>
                         <div class="project-visual">
                             <div class="image-wrapper">
@@ -93,14 +121,35 @@
                     <article class="project-item fade-in">
                         <div class="project-info">
                             <h3 class="project-title">Verdant</h3>
-                            <p class="project-desc">UI/UX Design & Front-End Prototype. Designed full multi-page layout
-                                in Figma.</p>
-                            <ul class="project-tags">
-                                <li>Figma</li>
-                                <li>HTML5/CSS3</li>
-                                <li>Design System</li>
-                            </ul>
-                            <a href="#" class="project-link">View Case Study</a>
+                            <div class="project-meta">
+                                <div class="meta-block">
+                                    <h4>Challenge</h4>
+                                    <p>Creating a high-conversion e-commerce flow for a luxury plant brand without
+                                        sacrificing minimalism.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>Solution</h4>
+                                    <p>Built a seamless checkout experience with a focus on visual storytelling and
+                                        trust signals.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>My Role</h4>
+                                    <ul class="role-list">
+                                        <li>Developed responsive product grid</li>
+                                        <li>Integrated video hero section</li>
+                                        <li>Custom form validation logic</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS Grid</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link">Live Demo</a>
+                                <a href="#" class="btn-link">Source Code</a>
+                            </div>
                         </div>
                         <div class="project-visual">
                             <div class="image-wrapper">
@@ -113,13 +162,35 @@
                     <article class="project-item fade-in">
                         <div class="project-info">
                             <h3 class="project-title">YB Clinical</h3>
-                            <p class="project-desc">High-end clinical brand identity and web presence.</p>
-                            <ul class="project-tags">
-                                <li>Branding</li>
-                                <li>Minimalism</li>
-                                <li>Web Design</li>
-                            </ul>
-                            <a href="#" class="project-link">View Case Study</a>
+                            <div class="project-meta">
+                                <div class="meta-block">
+                                    <h4>Challenge</h4>
+                                    <p>Establishing a digital presence that communicates absolute clinical purity and
+                                        precision.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>Solution</h4>
+                                    <p>A stark, monochromatic design system using monospace typography and high-contrast
+                                        layouts.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>My Role</h4>
+                                    <ul class="role-list">
+                                        <li>Created strict design system</li>
+                                        <li>Implemented dark/light mode logic</li>
+                                        <li>Built custom cart functionality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span>Design System</span>
+                                <span>Local Storage</span>
+                                <span>DOM Manipulation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-link">Live Demo</a>
+                                <a href="#" class="btn-link">Source Code</a>
+                            </div>
                         </div>
                         <div class="project-visual">
                             <div class="image-wrapper">
@@ -152,27 +223,37 @@
                             engineering, ensuring that the best digital products are born from a deep understanding of
                             both user needs and technical constraints.</p>
 
-                        <div class="skills-list">
-                            <div class="skill-group">
-                                <h4>Languages & Styling</h4>
-                                <ul>
-                                    <li>HTML5 & CSS3 (Flexbox, Grid)</li>
-                                    <li>JavaScript (ES6+)</li>
-                                </ul>
+                        <div class="skills-container">
+                            <div class="skill-card">
+                                <h4>Frontend Core</h4>
+                                <div class="skill-tags">
+                                    <span>HTML5</span>
+                                    <span>CSS3 (Flex/Grid)</span>
+                                    <span>JavaScript (ES6+)</span>
+                                    <span>TypeScript</span>
+                                    <span>React</span>
+                                    <span>Next.js</span>
+                                </div>
                             </div>
-                            <div class="skill-group">
-                                <h4>Design & Prototyping</h4>
-                                <ul>
-                                    <li>Figma (Wireframing, Prototyping)</li>
-                                    <li>User Flows & Design Systems</li>
-                                </ul>
+                            <div class="skill-card">
+                                <h4>Design & UX</h4>
+                                <div class="skill-tags">
+                                    <span>Figma</span>
+                                    <span>Wireframing</span>
+                                    <span>Prototyping</span>
+                                    <span>Design Systems</span>
+                                    <span>Accessibility (WCAG)</span>
+                                </div>
                             </div>
-                            <div class="skill-group">
-                                <h4>Tools & Productivity</h4>
-                                <ul>
-                                    <li>VS Code, Git, GitHub</li>
-                                    <li>AI-Powered Coding</li>
-                                </ul>
+                            <div class="skill-card">
+                                <h4>Tools & Performance</h4>
+                                <div class="skill-tags">
+                                    <span>Git/GitHub</span>
+                                    <span>VS Code</span>
+                                    <span>Vite</span>
+                                    <span>Webpack</span>
+                                    <span>Lighthouse</span>
+                                </div>
                             </div>
                         </div>
 
@@ -245,6 +326,31 @@
             <a href="#" class="back-to-top">Back to Top</a>
         </div>
     </footer>
+
+    <div class="tech-specs-panel hidden">
+        <div class="specs-header">
+            <span class="specs-title">DEV_HUD_v1.0</span>
+            <span class="specs-status">ONLINE</span>
+        </div>
+        <div class="specs-grid">
+            <div class="spec-item">
+                <span class="spec-label">VIEWPORT</span>
+                <span class="spec-value" id="viewport-size">-- x --</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">SCROLL Y</span>
+                <span class="spec-value" id="scroll-pos">0px</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">MOUSE</span>
+                <span class="spec-value" id="mouse-pos">0, 0</span>
+            </div>
+            <div class="spec-item">
+                <span class="spec-label">THEME</span>
+                <span class="spec-value" id="current-theme">LIGHT</span>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
