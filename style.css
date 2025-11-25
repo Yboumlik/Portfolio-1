@@ -262,24 +262,24 @@ h6 {
     overflow: hidden;
     border-radius: 12px;
     background-color: var(--bg-secondary);
-    /* 3D Tilt Setup */
-    perspective: 1000px;
-    transform-style: preserve-3d;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.05);
 }
 
 .profile-img {
     width: 100%;
     height: auto;
-    /* Remove static filters for natural look or keep subtle if desired */
-    /* filter: sepia(20%) hue-rotate(65deg) saturate(80%) opacity(0.95); */
-    transition: transform 0.1s ease-out;
-    /* Fast transition for smooth tilt */
-    will-change: transform;
     display: block;
 }
-
-/* Hover state handled by JS, but we can add a subtle scale */
-
 
 /* Work Section - Clean Grid */
 .work {

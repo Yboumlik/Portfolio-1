@@ -76,59 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    // 3D Parallax Tilt Effect (All Profile Images)
-    const profileWrappers = document.querySelectorAll('.image-wrapper');
-    profileWrappers.forEach(wrapper => {
-        const img = wrapper.querySelector('.profile-img');
-        if (!img) return; // Skip if no profile image (e.g., project images)
-
-        wrapper.addEventListener('mousemove', (e) => {
-            const rect = wrapper.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const xPct = (x / rect.width) - 0.5;
-            const yPct = (y / rect.height) - 0.5;
-            const maxTilt = 15;
-
-            const rotateX = yPct * -maxTilt * 2;
-            const rotateY = xPct * maxTilt * 2;
-
-            img.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-        });
-
-        wrapper.addEventListener('mouseleave', () => {
-            img.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-        });
-    });
-
-    // Magnetic Effect (Project Images)
-    const projectWrappers = document.querySelectorAll('.project-visual .image-wrapper');
-    projectWrappers.forEach(wrapper => {
-        const img = wrapper.querySelector('.project-img');
-        if (!img) return;
-
-        wrapper.addEventListener('mousemove', (e) => {
-            const rect = wrapper.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            // Calculate distance from center
-            const xPos = (x - rect.width / 2);
-            const yPos = (y - rect.height / 2);
-
-            // Magnetic strength (how much it moves)
-            // Reduced to 0.08 for a subtle, premium feel that stays within frame
-            const strength = 0.08;
-
-            // Move the entire wrapper instead of just the image to prevent clipping
-            wrapper.style.transform = `translate(${xPos * strength}px, ${yPos * strength}px)`;
-        });
-
-        wrapper.addEventListener('mouseleave', () => {
-            wrapper.style.transform = 'translate(0, 0)';
-        });
-    });
 
     // Progress Bar Animation
     const progressBars = document.querySelectorAll('.progress-bar');
