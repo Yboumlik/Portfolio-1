@@ -187,6 +187,20 @@ h6 {
     font-size: 1.25rem;
     letter-spacing: -0.02em;
     color: var(--text-primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo-separator {
+    color: var(--border-color);
+    font-weight: 400;
+}
+
+.logo-name {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
 }
 
 .nav-list {
@@ -638,6 +652,11 @@ h6 {
 @media (max-width: 768px) {
     .header {
         height: 60px;
+    }
+
+    .logo-separator,
+    .logo-name {
+        display: none;
     }
 
     .hero-grid,
