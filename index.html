@@ -8,20 +8,20 @@
     <meta name="description"
         content="Portfolio of Younes Boumlik, a Senior Frontend Developer specializing in minimal, accessible web interfaces.">
 
-    <!-- Fonts -->
+    <!-- Fonts: Inter (Primary) & JetBrains Mono (Code) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
         rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
-    <div class="cursor-dot"></div>
-    <div class="cursor-outline"></div>
+    <!-- Cursor elements removed for minimalist native feel -->
 
     <header class="header">
         <div class="container">
@@ -33,21 +33,16 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <button class="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="12" cy="12" r="5" />
-                    <path
-                        d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
-                </svg>
-            </button>
-            <button class="debug-toggle" aria-label="Toggle Developer HUD">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M16 18l6-6-6-6" />
-                    <path d="M8 6l-6 6 6 6" />
-                </svg>
-            </button>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <button class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -55,10 +50,11 @@
         <section class="hero">
             <div class="container hero-grid">
                 <div class="hero-text fade-in">
-                    <p class="subtitle">Frontend Developer & UI/UX Designer</p>
-                    <h1 class="title">Crafting digital <br>experiences with <br><em>precision</em> & <em>soul</em>.</h1>
+                    <p class="subtitle">Senior Frontend Developer</p>
+                    <h1 class="title">Building scalable <br>interfaces with <br><em>clarity</em> & <em>purpose</em>.
+                    </h1>
                     <div class="hero-cta">
-                        <a href="#work" class="btn">View Projects</a>
+                        <a href="#work" class="btn btn-primary">View Selected Work</a>
                     </div>
                 </div>
                 <div class="hero-image fade-in delay-1">
@@ -78,6 +74,94 @@
                 </div>
 
                 <div class="projects-list">
+                    <article class="project-item fade-in">
+                        <div class="project-info">
+                            <h3 class="project-title">Verdant</h3>
+                            <div class="project-meta">
+                                <div class="meta-block">
+                                    <h4>Challenge</h4>
+                                    <p>Creating a high-conversion e-commerce flow for a luxury plant brand without
+                                        sacrificing minimalism.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>Solution</h4>
+                                    <p>Built a seamless checkout experience with a focus on visual storytelling and
+                                        trust signals.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>My Role</h4>
+                                    <ul class="role-list">
+                                        <li>Developed responsive product grid</li>
+                                        <li>Integrated video hero section</li>
+                                        <li>Custom form validation logic</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span>HTML5</span>
+                                <span>CSS Grid</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://yboumlik.github.io/Verdant-main/" class="btn-link" target="_blank">Live
+                                    Demo</a>
+                                <a href="#" class="btn-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="image-wrapper">
+                                <a href="https://yboumlik.github.io/Verdant-main/" target="_blank">
+                                    <img src="assets/projects/Verdant-screenshot.png" alt="Verdant E-Commerce Website"
+                                        class="project-img">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-item fade-in">
+                        <div class="project-info">
+                            <h3 class="project-title">YB Clinical</h3>
+                            <div class="project-meta">
+                                <div class="meta-block">
+                                    <h4>Challenge</h4>
+                                    <p>Establishing a digital presence that communicates absolute clinical purity and
+                                        precision.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>Solution</h4>
+                                    <p>A stark, monochromatic design system using monospace typography and high-contrast
+                                        layouts.</p>
+                                </div>
+                                <div class="meta-block">
+                                    <h4>My Role</h4>
+                                    <ul class="role-list">
+                                        <li>Created strict design system</li>
+                                        <li>Implemented dark/light mode logic</li>
+                                        <li>Built custom cart functionality</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span>Design System</span>
+                                <span>Local Storage</span>
+                                <span>DOM Manipulation</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://yboumlik.github.io/YB-clinical/" class="btn-link" target="_blank">Live
+                                    Demo</a>
+                                <a href="#" class="btn-link">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project-visual">
+                            <div class="image-wrapper">
+                                <a href="https://yboumlik.github.io/YB-clinical/" target="_blank">
+                                    <img src="assets/projects/YB-clinic.screenshot.png" alt="YB Clinical Website"
+                                        class="project-img">
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
                     <article class="project-item fade-in">
                         <div class="project-info">
                             <h3 class="project-title">Saffron App</h3>
@@ -120,85 +204,234 @@
 
                     <article class="project-item fade-in">
                         <div class="project-info">
-                            <h3 class="project-title">Verdant</h3>
+                            <h3 class="project-title">YB.MugBeans</h3>
                             <div class="project-meta">
                                 <div class="meta-block">
                                     <h4>Challenge</h4>
-                                    <p>Creating a high-conversion e-commerce flow for a luxury plant brand without
-                                        sacrificing minimalism.</p>
+                                    <p>Creating an immersive coffee shop experience that balances aesthetics with
+                                        functionality for seamless online ordering.</p>
                                 </div>
                                 <div class="meta-block">
                                     <h4>Solution</h4>
-                                    <p>Built a seamless checkout experience with a focus on visual storytelling and
-                                        trust signals.</p>
+                                    <p>Developed a minimalist landing page with advanced cart functionality, product
+                                        filtering, and smooth animations to enhance user engagement.</p>
                                 </div>
                                 <div class="meta-block">
                                     <h4>My Role</h4>
                                     <ul class="role-list">
-                                        <li>Developed responsive product grid</li>
-                                        <li>Integrated video hero section</li>
-                                        <li>Custom form validation logic</li>
+                                        <li>Built modular JavaScript architecture</li>
+                                        <li>Implemented cart with localStorage persistence</li>
+                                        <li>Created dynamic product filtering system</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="tech-stack">
-                                <span>HTML5</span>
-                                <span>CSS Grid</span>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="#" class="btn-link">Live Demo</a>
-                                <a href="#" class="btn-link">Source Code</a>
-                            </div>
-                        </div>
-                        <div class="project-visual">
-                            <div class="image-wrapper">
-                                <img src="assets/projects/Verdant-screenshot.png" alt="Verdant E-Commerce Website"
-                                    class="project-img">
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="project-item fade-in">
-                        <div class="project-info">
-                            <h3 class="project-title">YB Clinical</h3>
-                            <div class="project-meta">
-                                <div class="meta-block">
-                                    <h4>Challenge</h4>
-                                    <p>Establishing a digital presence that communicates absolute clinical purity and
-                                        precision.</p>
-                                </div>
-                                <div class="meta-block">
-                                    <h4>Solution</h4>
-                                    <p>A stark, monochromatic design system using monospace typography and high-contrast
-                                        layouts.</p>
-                                </div>
-                                <div class="meta-block">
-                                    <h4>My Role</h4>
-                                    <ul class="role-list">
-                                        <li>Created strict design system</li>
-                                        <li>Implemented dark/light mode logic</li>
-                                        <li>Built custom cart functionality</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="tech-stack">
-                                <span>Design System</span>
+                                <span>Vanilla JS</span>
+                                <span>Class-Based Architecture</span>
                                 <span>Local Storage</span>
-                                <span>DOM Manipulation</span>
                             </div>
                             <div class="project-links">
-                                <a href="#" class="btn-link">Live Demo</a>
+                                <a href="https://yboumlik.github.io/Minimalist-Coffee-Shop-Landing-Page/"
+                                    class="btn-link" target="_blank">Live Demo</a>
                                 <a href="#" class="btn-link">Source Code</a>
                             </div>
                         </div>
                         <div class="project-visual">
                             <div class="image-wrapper">
-                                <img src="assets/projects/YB-clinic.screenshot.png" alt="YB Clinical Website"
-                                    class="project-img">
+                                <a href="https://yboumlik.github.io/Minimalist-Coffee-Shop-Landing-Page/"
+                                    target="_blank">
+                                    <img src="assets/projects/project-YB.mugbeans.png" alt="YB.MugBeans Coffee Shop"
+                                        class="project-img">
+                                </a>
                             </div>
                         </div>
                     </article>
+                </div>
+        </section>
+
+        <!-- Full-Stack Journey Section -->
+        <section id="backend-journey" class="section">
+            <div class="container">
+                <div class="section-header fade-in">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Full-Stack Journey</h2>
+                </div>
+
+                <div class="journey-intro fade-in">
+                    <p class="lead">While I excel at frontend development, I'm actively expanding my skills into backend
+                        technologies to build complete, full-stack applications.</p>
+                    <p>I believe understanding backend architecture makes me a better frontend developer. By learning
+                        Node.js, Express, and database design, I'm gaining insight into how data flows through
+                        applications
+                        and how to build more efficient, scalable interfaces.</p>
+                </div>
+
+                <div class="journey-grid">
+                    <!-- 1. Learning Pathway -->
+                    <div class="journey-column fade-in delay-1">
+                        <h3 class="subsection-title">Learning Pathway</h3>
+                        <div class="timeline">
+                            <div class="timeline-item active">
+                                <div class="timeline-marker"><i class="ph ph-rocket-launch"></i></div>
+                                <div class="timeline-content">
+                                    <h4>Current Focus</h4>
+                                    <p class="timeline-desc">Building foundational backend services</p>
+                                    <div class="timeline-tags">
+                                        <span>Node.js</span>
+                                        <span>Express.js</span>
+                                        <span>REST APIs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item learning">
+                                <div class="timeline-marker"><i class="ph ph-books"></i></div>
+                                <div class="timeline-content">
+                                    <h4>Next 3 Months</h4>
+                                    <p class="timeline-desc">Database integration & user management</p>
+                                    <div class="timeline-tags">
+                                        <span>MongoDB</span>
+                                        <span>Authentication</span>
+                                        <span>API Security</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timeline-item planned">
+                                <div class="timeline-marker"><i class="ph ph-target"></i></div>
+                                <div class="timeline-content">
+                                    <h4>Future Goals</h4>
+                                    <p class="timeline-desc">End-to-end application development</p>
+                                    <div class="timeline-tags">
+                                        <span>Full-Stack Apps</span>
+                                        <span>Deployment</span>
+                                        <span>DevOps Basics</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Technical Skills Progress -->
+                    <div class="journey-column fade-in delay-2">
+                        <h3 class="subsection-title">Technical Skills</h3>
+                        <div class="skills-progress">
+                            <div class="skill-category">
+                                <h4>Frontend Mastery</h4>
+                                <div class="skill-level">
+                                    <div class="skill-info">
+                                        <span>Vanilla JavaScript</span>
+                                        <span>95%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar" data-level="95%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-info">
+                                        <span>CSS & Responsive Design</span>
+                                        <span>90%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar" data-level="90%"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="skill-category">
+                                <h4>Backend Development</h4>
+                                <div class="skill-level">
+                                    <div class="skill-info">
+                                        <span>Node.js & Express</span>
+                                        <span>65%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar" data-level="65%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-info">
+                                        <span>API Architecture</span>
+                                        <span>50%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar" data-level="50%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-level">
+                                    <div class="skill-info">
+                                        <span>Database Design</span>
+                                        <span>40%</span>
+                                    </div>
+                                    <div class="progress-bar-bg">
+                                        <div class="progress-bar" data-level="40%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. Backend Projects -->
+                <div class="backend-projects fade-in delay-3">
+                    <h3 class="subsection-title">Backend Projects</h3>
+                    <div class="backend-grid">
+                        <div class="backend-card">
+                            <div class="card-header">
+                                <h4>Coffee API & Management</h4>
+                                <span class="badge">Full-Stack Learning</span>
+                            </div>
+                            <p>RESTful API with CRUD operations, product management, and JSON data validation.</p>
+                            <div class="tech-stack small">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="text-link">View Code &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="backend-card">
+                            <div class="card-header">
+                                <h4>User Auth System</h4>
+                                <span class="badge">Backend Focus</span>
+                            </div>
+                            <p>Secure user registration, login, password hashing (bcrypt), and JWT authentication.</p>
+                            <div class="tech-stack small">
+                                <span>Node.js</span>
+                                <span>JWT</span>
+                                <span>Bcrypt</span>
+                            </div>
+                            <div class="card-links">
+                                <a href="#" class="text-link">View Code &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Code Snippets -->
+                <div class="code-showcase fade-in delay-3">
+                    <h3 class="subsection-title">Code Demonstrations</h3>
+                    <div class="code-block-wrapper">
+                        <div class="code-header">
+                            <span class="filename">server.js</span>
+                            <span class="language">JavaScript</span>
+                        </div>
+                        <pre><code class="language-javascript">// Example: Express API Route
+app.get('/api/coffees', async (req, res) => {
+  try {
+    const coffees = await Coffee.find();
+    res.json({
+      success: true,
+      data: coffees,
+      count: coffees.length
+    });
+  } catch (error) {
+    res.status(500).json({
+      success: false,
+      message: 'Error fetching coffee data'
+    });
+  }
+});</code></pre>
+                    </div>
                 </div>
             </div>
         </section>
@@ -206,7 +439,7 @@
         <section id="about" class="about section">
             <div class="container">
                 <div class="section-header fade-in">
-                    <span class="section-number">02</span>
+                    <span class="section-number">03</span>
                     <h2 class="section-title">About Me</h2>
                 </div>
 
@@ -267,7 +500,7 @@
                                             HTML, Responsive CSS</span>
                                     </li>
                                     <li>
-                                        <strong>University of Casablanca</strong> (2017 - 2019)<br>
+                                        <strong>University of Casablanca</strong> (2017 - 2021)<br>
                                         <span style="font-size: 0.9em; opacity: 0.8;">English Linguistics</span>
                                     </li>
                                 </ul>
@@ -286,33 +519,29 @@
         <section id="contact" class="contact section">
             <div class="container">
                 <div class="section-header fade-in">
-                    <span class="section-number">03</span>
+                    <span class="section-number">04</span>
                     <h2 class="section-title">Contact</h2>
                 </div>
 
-                <div class="contact-grid">
-                    <div class="contact-content fade-in">
+                <div class="contact-grid fade-in">
+                    <div class="contact-img-wrapper">
+                        <img src="assets/images/profile11.jpeg" alt="Contact Younes" class="profile-img">
+                    </div>
+
+                    <div class="contact-content">
                         <p class="contact-lead">Have a project in mind? Let's build something together.</p>
 
-                        <div class="contact-details" style="margin-bottom: 3rem;">
-                            <a href="mailto:younes.q.boumlik@gmail.com" class="email-link"
-                                style="font-size: clamp(1.5rem, 3vw, 2.5rem); margin-bottom: 1rem;">younes.q.boumlik@gmail.com</a>
-                            <p class="contact-info"
-                                style="font-size: 1.1rem; color: var(--accent-color); margin-bottom: 0.5rem;">+212 612
-                                054 930</p>
-                            <p class="contact-info" style="font-size: 1.1rem; color: var(--accent-color);">Casablanca,
-                                Morocco 20220</p>
+                        <a href="mailto:younes.q.boumlik@gmail.com" class="email-link">younes.q.boumlik@gmail.com</a>
+
+                        <div class="contact-details">
+                            <p class="contact-info">+212 612 054 930</p>
+                            <p class="contact-info">Casablanca, Morocco 20220</p>
                         </div>
 
                         <div class="social-links">
                             <a href="https://www.linkedin.com/in/younes-boumlik-771843302/" target="_blank">LinkedIn</a>
                             <a href="https://github.com/Yboumlik" target="_blank">GitHub</a>
                             <a href="#">Twitter</a>
-                        </div>
-                    </div>
-                    <div class="contact-image fade-in delay-1">
-                        <div class="image-wrapper contact-img-wrapper">
-                            <img src="assets/images/profile11.jpeg" alt="Contact Younes" class="profile-img">
                         </div>
                     </div>
                 </div>
