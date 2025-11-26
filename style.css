@@ -907,6 +907,19 @@ h6 {
     text-decoration: underline;
 }
 
+/* Coming Soon Placeholder */
+.coming-soon-placeholder {
+    background-color: var(--bg-secondary);
+    border: 1px dashed var(--border-color);
+    border-radius: 16px;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
 /* Code Snippets Styles */
 .code-block-wrapper {
     background-color: #1e1e1e;
