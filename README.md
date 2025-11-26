@@ -74,3 +74,12 @@ Since this project relies on standard web technologies, no build step is require
 *   **Email**: [younes.q.boumlik@gmail.com](mailto:younes.q.boumlik@gmail.com)
 *   **LinkedIn**: [linkedin.com/in/younes-boumlik](https://www.linkedin.com/in/younes-boumlik-771843302/)
 *   **GitHub**: [github.com/Yboumlik](https://github.com/Yboumlik)
+
+## 📄 License & Copyright
+
+### The Code (MIT)
+The source code of this portfolio (HTML, CSS, JavaScript architecture) is licensed under the **MIT License**. You are free to use the code structure for your own projects, provided you include the original copyright notice.
+
+### The Content (Copyright)
+**© 2024 Younes Boumlik. All Rights Reserved.**
+The content of this website, including but not limited to text, images, case studies, design assets, and personal branding, is the intellectual property of Younes Boumlik. These assets may not be copied, reproduced, or used without explicit written permission.
