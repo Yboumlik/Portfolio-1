@@ -1,6 +1,6 @@
-# Senior Frontend Developer Portfolio
+# Junior Frontend Developer Portfolio
 
-A high-performance, minimalist portfolio website designed to showcase frontend engineering expertise. Built exclusively with **Vanilla HTML, CSS, and JavaScript**, this project demonstrates a mastery of web fundamentals without reliance on external frameworks or libraries.
+A high-performance, minimalist portfolio website designed to showcase frontend development skills. Built exclusively with **Vanilla HTML, CSS, and JavaScript**, this project demonstrates a mastery of web fundamentals without reliance on external frameworks or libraries.
 
 ![Portfolio Preview](assets/images/profile6.jpeg)
 
