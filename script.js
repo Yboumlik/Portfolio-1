@@ -77,18 +77,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Progress Bar Animation
-    const progressBars = document.querySelectorAll('.progress-bar');
-    const progressObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const bar = entry.target;
-                const level = bar.getAttribute('data-level');
-                bar.style.width = level;
-                progressObserver.unobserve(bar);
-            }
-        });
-    }, { threshold: 0.2 });
-
-    progressBars.forEach(bar => progressObserver.observe(bar));
+    // Progress Bar Animation - REMOVED
 });
